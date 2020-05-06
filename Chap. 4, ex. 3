@@ -23,5 +23,4 @@ int main()
         << "\nSmallest distance: " << distances[0]
         << "\nGreatest distance: " << distances[distances.size() - 1]
         << "\nMean distance: " << total_distance/distances.size() << '\n';
-
 }
