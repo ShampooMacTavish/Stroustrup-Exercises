@@ -9,7 +9,7 @@ int main()
 
     for (double distance; cin >> distance;){
         if (distance > 0) distances.push_back(distance);
-        else if (distance <= 0) {cout << "\nError. Please enter a valid value.\n"; continue;}
+        else if (distance <= 0) cout << "\nError. Please enter a valid value.\n"; continue;
     }
   
 
