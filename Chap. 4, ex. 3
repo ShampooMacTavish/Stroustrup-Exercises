@@ -1,0 +1,27 @@
+#include "std_lib_facilities.h"
+
+int main()
+{
+    vector<double> distances;
+    double total_distance = 0;
+
+    cout << "Please enter a sequence of doubles, separated by a whitespace: ";
+
+    for (double distance; cin >> distance;){
+        if (distance > 0) distances.push_back(distance);
+        else if (distance <= 0) {cout << "\nError. Please enter a valid value.\n"; continue;}
+    }
+  
+
+    for (double x : distances) {
+        total_distance += x;
+    }
+  
+    sort(distances);
+   
+    cout
+        << "\nSmallest distance: " << distances[0]
+        << "\nGreatest distance: " << distances[distances.size() - 1]
+        << "\nMean distance: " << total_distance/distances.size() << '\n';
+
+}
